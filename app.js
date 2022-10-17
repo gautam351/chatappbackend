@@ -9,8 +9,8 @@ const server = () => {
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
   app.use(express.json());
-  app.use("/api/v1", AuthRoutes);
-  app.use("/api/v1", chatRoutes);
+  app.use("/", AuthRoutes);
+  app.use("/", chatRoutes);
 
   return app;
 };
