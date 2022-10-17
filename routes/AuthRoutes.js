@@ -22,4 +22,5 @@ router.route("/addchat").post(isAuth, addEmail);
 
 router.route("/forget").post(forgetPassword);
 router.route("/resetPassword").post(resetPassword);
+//comment
 module.exports = router;
